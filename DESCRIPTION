@@ -1,5 +1,5 @@
 Package: genero
-Title: What the Package Does (One Line, Title Case)
+Title: Estimate Gender From Names in Spanish and Portuguese
 Version: 0.0.0.9000
 Authors@R: 
     person(given = "First",
@@ -11,3 +11,5 @@ Description: What the package does (one paragraph).
 License: What license it uses
 Encoding: UTF-8
 LazyData: true
+URL: https://github.com/datasketch/genero
+BugReports: https://github.com/jpmarindiaz/genero/issues
