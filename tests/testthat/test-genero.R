@@ -55,6 +55,9 @@ test_that("Test utils", {
   na <- "NAN"
   expect_equal(na_to_chr(x, na), c("Juan", "NAN"))
 
+  x <- c("Juan ", "Juan Maria", "Maria José", " José María", "María")
+  expect_equal(many_words_proportion(x), 0.6)
+
   x <- c("Juan", "Juan Maria", "Maria José", "José María", "María")
   expect_equal(many_words_proportion(x), 0.6)
 
