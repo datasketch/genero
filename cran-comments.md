@@ -13,8 +13,9 @@ There were no ERRORs, WARNINGs or NOTES.
 Platform: 	Fedora Linux, R-devel, clang, gfortran
 no ERRORs, WARNINGs, 1 NOTE
 
-CRAN Win Builder 
-Maintainer: 'Juan Pablo Marin Diaz <jpmarindiaz@gmail.com>'
+* checking CRAN incoming feasibility ... NOTE
+Maintainer: ‘Juan Pablo Marin Diaz <jpmarindiaz@gmail.com>’
+
 New submission
 
 
