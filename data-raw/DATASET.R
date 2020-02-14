@@ -2,6 +2,7 @@
 
 usethis::use_data("DATASET")
 
+## https://brasil.io/dataset/genero-nomes/nomes
 names_pt <- read.csv(system.file("names-gender-freq-pt.csv", package = "genero"))
 
 library(dplyr)
