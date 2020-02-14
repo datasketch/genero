@@ -65,8 +65,10 @@ genero <- function(names,
 
   if("data.frame" %in% class(names)){
     if(is.null(col)){
-      name_cols <- read.csv(system.file("name-columns.csv", package = "genero"),
-                            stringsAsFactors = FALSE)[[1]]
+      name_cols <- c("name", "names", "first_name", "first name", "nombre", "nombres",
+                     "nombres y apellidos", "nombres_apellidos", "nombre_apellidos", "nome",
+                     "prenom")
+
       col <- which_in(name_cols, names(names))
       message("Guessed names column: ", col)
       if(length(col) == 0) stop("Please provide a column with the names to estimate gender to")
