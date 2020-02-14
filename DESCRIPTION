@@ -8,7 +8,7 @@ Authors@R:
            role = c("aut", "cre"),
            email = "jpmarindiaz@gmail.com")
 Maintainer: Juan Pablo Marin Diaz <jpmarindiaz@gmail.com>
-Description: Estimate gender from names in spanish and portuguese. 
+Description: Estimate gender from names in Spanish and Portuguese. 
     Works with vectors and dataframes. The estimation works not only
     for first names but also full names. The package relies on a
     compilation of common names with it's most frequent associated 
