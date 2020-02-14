@@ -3,14 +3,14 @@
 \docType{data}
 \name{names_gender_es}
 \alias{names_gender_es}
-\title{Names with gender in spanish}
+\title{Names with gender in Spanish}
 \format{Data frame with two columns: name and gender.}
 \usage{
 names_gender_es
 }
 \description{
 These data was collected and organized manually from multiples sources.
-It consists of more than 9810 names in spanish and its corresponding associated
+It consists of more than 9810 names in Spanish and its corresponding associated
 gender accounting for name variations.
 }
 \examples{

@@ -3,14 +3,14 @@
 \docType{data}
 \name{names_gender_pt}
 \alias{names_gender_pt}
-\title{Names with gender in portuguese}
+\title{Names with gender in Portuguese}
 \format{Data frame with two columns: name and gender.}
 \usage{
 names_gender_pt
 }
 \description{
 These data is created and derived from https://brasil.io/dataset/genero-nomes/nomes
-it consists of more than 50.000 names in portuguese and its corresponding associated
+it consists of more than 50.000 names in Portuguese and its corresponding associated
 gender.
 }
 \examples{

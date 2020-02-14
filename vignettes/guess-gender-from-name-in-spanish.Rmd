@@ -1,5 +1,5 @@
 ---
-title: "guess-gender-from-name-in-spanish"
+title: "Guess Gender from Name in Spanish"
 output: rmarkdown::html_vignette
 vignette: >
   %\VignetteIndexEntry{guess-gender-from-name-in-spanish}

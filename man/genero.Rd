@@ -19,7 +19,7 @@ genero(
 \item{result_as}{A named vector with names c("male", "female")
 values can be used to override the results}
 
-\item{lang}{Use "es" for spanish (default), "pt" for portuguese.}
+\item{lang}{Use "es" for Spanish (default), "pt" for Portuguese.}
 
 \item{col}{The name of the column with the names or full names
 when the input is a data frame.}

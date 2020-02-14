@@ -3,7 +3,7 @@
 #' @param names A vector or data.frame with names or full names
 #' @param result_as A named vector with names c("male", "female")
 #'   values can be used to override the results
-#' @param lang Use "es" for spanish (default), "pt" for portuguese.
+#' @param lang Use "es" for Spanish (default), "pt" for Portuguese.
 #' @param col The name of the column with the names or full names
 #'   when the input is a data frame.
 #' @param na String to be used when there is not match for gender
