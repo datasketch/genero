@@ -13,3 +13,10 @@ Encoding: UTF-8
 LazyData: true
 URL: https://github.com/datasketch/genero
 BugReports: https://github.com/jpmarindiaz/genero/issues
+Suggests: 
+    testthat (>= 2.1.0),
+    knitr,
+    rmarkdown
+Imports: 
+VignetteBuilder: knitr
+RoxygenNote: 7.0.2
