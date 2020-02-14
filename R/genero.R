@@ -2,9 +2,11 @@
 #' @export
 genero <- function(names, col = NULL, na = NA,
                    rev_weights = FALSE,
+                   lang = "es",
                    result_as = c(male = "male", female = "female")){
 
-  nms_gender <- read.csv(system.file("names-gender-es.csv", package = "genero"),
+  file <- paste0("names-gender-",lang,".csv")
+  nms_gender <- read.csv(system.file(file, package = "genero"),
                          stringsAsFactors = FALSE)
   nms_gender <- nms_gender %>%
     dplyr::mutate(gender = remove_accents(tolower(gender))) %>%

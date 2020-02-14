@@ -13,6 +13,12 @@ test_that("Genero with vectors", {
 
 })
 
+test_that("Portuguese", {
+
+  names <- c("luiz", "inacio", "gabriela", "ina")
+  expect_equal(genero(names, lang = "pt"), c("male", "male", "female", "female"))
+
+})
 
 test_that("Genero with dataframes", {
 
