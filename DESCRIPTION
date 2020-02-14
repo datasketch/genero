@@ -1,7 +1,6 @@
 Package: genero
 Title: Estimate Gender from Names in Spanish and Portuguese
 Version: 0.1.0
-Date: 2020-01-19
 Authors@R: 
     person(given = "Juan Pablo",
            family = "Marin Diaz",

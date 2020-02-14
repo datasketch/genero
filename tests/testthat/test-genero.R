@@ -11,9 +11,17 @@ test_that("Genero with vectors", {
   names <- as.factor(c("Carlos", "Ana"))
   expect_equal(genero(names), c("male", "female"))
 
+  names <- "XXXXXX"
+  expect_equal(genero(names),as.character(NA))
+
 })
 
 test_that("Portuguese", {
+
+
+
+  name <- "Ana"
+  genero(name)
 
   names <- c("luiz", "inacio", "gabriela", "ina")
   expect_equal(genero(names, lang = "pt"), c("male", "male", "female", "female"))

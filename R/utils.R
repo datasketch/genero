@@ -20,7 +20,10 @@ match_replace <- function (v, dic, na = NA, force = TRUE){
 
 which_in <- function (x, y) x[x %in% y]
 
-na_proportion <- function(x) sum(is.na(x))/length(x)
+na_proportion <- function(x){
+  if(length(x) < 4) return(0)
+  sum(is.na(x))/length(x)
+}
 
 many_words_proportion <- function(x) sum(grepl("[^\\s]([ ]{1,})[^\\s]",x))/length(x)
 

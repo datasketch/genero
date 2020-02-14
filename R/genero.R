@@ -37,7 +37,7 @@ genero <- function(names,
   if(class(names) %in% c("factor", "character")) {
     names <- remove_accents(tolower(names))
     gender <- match_replace(names, nms_gender, na = na)
-
+    if(length(gender) == 1 && is.na(gender)) return(gender)
     if(na_proportion(gender) > 0.7 || many_words_proportion(names) > 0.5){
       # Try splitting names
       lnames <- strsplit(names, " ")
