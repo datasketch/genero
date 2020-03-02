@@ -1,3 +1,7 @@
+## Resubsimission
+
+The package does not use any new methodology for gender inference. It uses a look up table (clarified in description).
+
 
 ## Test environments
 * local Ubuntu 18. R version 3.6.2 (2020-02-14)

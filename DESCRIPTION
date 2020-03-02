@@ -11,7 +11,8 @@ Description: Estimate gender from names in Spanish and Portuguese.
     Works with vectors and dataframes. The estimation works not only
     for first names but also full names. The package relies on a
     compilation of common names with it's most frequent associated 
-    gender in both languages.
+    gender in both languages which are used as look up tables for gender
+    inference.
 URL: https://github.com/datasketch/genero
 License: MIT + file LICENSE
 Encoding: UTF-8
