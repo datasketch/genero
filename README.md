@@ -75,6 +75,12 @@ names <- c("Juan Álvarez", "Juan Maria García", "Maria José", "José María",
 age <- c(23, 43, 56, 67, 24)
 
 d <- data.frame(names = names, age = age, stringsAsFactors = FALSE)
-genero(names)
-#> [1] "male"   "male"   "female" "male"   "female"
+genero(d)
+#> Guessed names column: names
+#>               names names_gender_guess age
+#> 1      Juan Álvarez               male  23
+#> 2 Juan Maria García               male  43
+#> 3        Maria José             female  56
+#> 4        José María               male  67
+#> 5   María Rodríguez             female  24
 ```
