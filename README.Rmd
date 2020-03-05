@@ -69,7 +69,7 @@ names <- c("Juan Álvarez", "Juan Maria García", "Maria José", "José María",
 age <- c(23, 43, 56, 67, 24)
 
 d <- data.frame(names = names, age = age, stringsAsFactors = FALSE)
-genero(names)
+genero(d)
 ```
 
 
