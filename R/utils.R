@@ -39,6 +39,10 @@ insert_column <- function(d, vector, target, col_name){
   }
   new_col <- data.frame(vector, stringsAsFactors = FALSE)
   names(new_col) <- col_name
+  if(target == ncol(d)){
+    d[[col_name]] <- vector
+    return(d)
+  }
   cbind(d[,1:target,drop=FALSE], new_col, d[,(target+1):length(d),drop=FALSE])
 }
 

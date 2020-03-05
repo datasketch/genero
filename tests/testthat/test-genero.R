@@ -32,10 +32,13 @@ test_that("Genero with dataframes", {
 
   names <- c("Juan", "Pablo", "Camila", "Mariana")
   age <- c(23, 43, 56, 67)
+  last <- c("Díaz", "Pérez", "Dias", "Peres")
 
-  d <- data.frame(names = names, age = age, stringsAsFactors = FALSE)
+  d <- data.frame(names = names, age = age, last = last, stringsAsFactors = FALSE)
 
   genero(d)
+  genero(d, col = "names")
+  genero(d, col = "last")
 
   expect_equal(genero(d, result_as = c(male = "M", female = "F"))[,"names_gender_guess"],
                c("M", "M", "F", "F"))
@@ -68,6 +71,7 @@ test_that("Which name column", {
 
 })
 
+
 test_that("Test utils", {
 
   x <- c("Juan", NA)
@@ -81,6 +85,9 @@ test_that("Test utils", {
   expect_equal(many_words_proportion(x), 0.6)
 
   expect_equal(sum(insert_column(iris, 0, 2, "new_column")[,3]), 0)
+  expect_equal(sum(insert_column(cars, 0, 2, "new_column")[,3]), 0)
+
+
 
 })
 

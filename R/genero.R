@@ -72,8 +72,7 @@ genero <- function(nms,
     }
     gender <- genero(nms[,col[1]], result_as = result_as)
     target <- match(col, names(nms))
-    gender <- insert_column(nms, gender, target, col_name = paste0(col,"_gender_guess")
-    )
+    gender <- insert_column(nms, gender, target, col_name = paste0(col,"_gender_guess"))
   }
   gender
 
