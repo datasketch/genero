@@ -40,10 +40,13 @@ test_that("Genero with dataframes", {
   genero(d, col = "names")
   genero(d, col = "last")
 
-  expect_equal(genero(d, result_as = c(male = "M", female = "F"))[,"names_gender_guess"],
+  expect_equal(names(genero(d, col = "last"))[4], "last_gender")
+  expect_equal(names(genero(d, col = "last", out_colname = "guessed_gender"))[4], "guessed_gender")
+
+  expect_equal(genero(d, result_as = c(male = "M", female = "F"))[,"names_gender"],
                c("M", "M", "F", "F"))
   d <- data.frame(names = names, age = age, stringsAsFactors = TRUE)
-  expect_equal(genero(d, result_as = c(male = "M", female = "F"))[,"names_gender_guess"],
+  expect_equal(genero(d, result_as = c(male = "M", female = "F"))[,"names_gender"],
                c("M", "M", "F", "F"))
 
 })

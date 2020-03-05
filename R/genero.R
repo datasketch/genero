@@ -7,6 +7,8 @@
 #' @param col The name of the column with the names or full names.
 #'   when the input is a data frame.
 #' @param na String to be used when there is not match for gender
+#' @param out_colname String to be used for guessed gender column name
+#'   defaults to name column with "_gender" appended.
 #' @param rev_weights Boolean to indicate if weights should be
 #'   reversed when input names have the format Last Name First Name.
 #'
@@ -24,6 +26,7 @@ genero <- function(nms,
                    result_as = c(male = "male", female = "female"),
                    lang = "es",
                    col = NULL, na = NA,
+                   out_colname = NULL,
                    rev_weights = FALSE
                    ){
 
@@ -72,7 +75,7 @@ genero <- function(nms,
     }
     gender <- genero(nms[,col[1]], result_as = result_as)
     target <- match(col, names(nms))
-    gender <- insert_column(nms, gender, target, col_name = paste0(col,"_gender_guess"))
+    gender <- insert_column(nms, gender, target, col_name = out_colname %||% paste0(col,"_gender"))
   }
   gender
 
