@@ -11,14 +11,14 @@ test_that("Genero with vectors", {
   names <- as.factor(c("Carlos", "Ana"))
   expect_equal(genero(names), c("male", "female"))
 
+  expect_null(genero(NULL))
+
   names <- "XXXXXX"
   expect_equal(genero(names),as.character(NA))
 
 })
 
 test_that("Portuguese", {
-
-
 
   name <- "Ana"
   genero(name)
@@ -34,6 +34,9 @@ test_that("Genero with dataframes", {
   age <- c(23, 43, 56, 67)
 
   d <- data.frame(names = names, age = age, stringsAsFactors = FALSE)
+
+  genero(d)
+
   expect_equal(genero(d, result_as = c(male = "M", female = "F"))[,"names_gender_guess"],
                c("M", "M", "F", "F"))
   d <- data.frame(names = names, age = age, stringsAsFactors = TRUE)
@@ -56,6 +59,14 @@ test_that("Test with full names", {
 
 })
 
+
+test_that("Which name column", {
+
+  expect_equal("Name", which_name_column(c("Name","Age","City")))
+  expect_null(which_name_column(c("NNNNNAME","Age","City")))
+
+
+})
 
 test_that("Test utils", {
 

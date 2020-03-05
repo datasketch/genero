@@ -5,7 +5,7 @@
 \title{Panel component for shiny panels layout}
 \usage{
 genero(
-  names,
+  nms,
   result_as = c(male = "male", female = "female"),
   lang = "es",
   col = NULL,
@@ -14,20 +14,20 @@ genero(
 )
 }
 \arguments{
-\item{names}{A vector or data.frame with names or full names}
-
 \item{result_as}{A named vector with names c("male", "female")
-values can be used to override the results}
+values can be used to override the results.}
 
 \item{lang}{Use "es" for Spanish (default), "pt" for Portuguese.}
 
-\item{col}{The name of the column with the names or full names
+\item{col}{The name of the column with the names or full names.
 when the input is a data frame.}
 
 \item{na}{String to be used when there is not match for gender}
 
 \item{rev_weights}{Boolean to indicate if weights should be
-reversed when input names have the format Last Name First Name}
+reversed when input names have the format Last Name First Name.}
+
+\item{names}{A vector or data.frame with names or full names}
 }
 \value{
 A vector of data frame with the estimated gender for the
