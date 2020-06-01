@@ -16,6 +16,10 @@ test_that("Genero with vectors", {
   names <- "XXXXXX"
   expect_equal(genero(names),as.character(NA))
 
+  names <- c("Juan Diaz","OSCAR   OSPINA  SANCHEZ")
+  expect_equal(genero(names), c("male", "male"))
+
+
 })
 
 test_that("Portuguese", {

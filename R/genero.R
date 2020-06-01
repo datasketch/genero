@@ -39,6 +39,7 @@ genero <- function(nms,
   gender <- NULL
   if(class(nms) %in% c("factor", "character")) {
     nms <- remove_accents(tolower(nms))
+    nms <- gsub(" +"," ", nms)
     gender <- match_replace(nms, nms_gender, na = na)
     if(length(gender) == 1 && is.na(gender)) return(gender)
     if(na_proportion(gender) > 0.7 || many_words_proportion(nms) > 0.5){
